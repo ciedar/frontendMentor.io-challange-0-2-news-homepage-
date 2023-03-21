@@ -7,12 +7,13 @@
 
 html {
     background-color: lightgrey;
+    /* position: relative; */
 }
 
 body {
     font-family: 'Inter', sans-serif;
     width: 60%;
-    margin: auto;
+    margin: 50px auto 50px auto;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.103);
     background-color: white;
     padding: 50px 100px 50px 100px
@@ -25,9 +26,9 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: auto;
+    margin: auto auto 44px auto;
     align-items: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .nav-bar-div {
@@ -50,6 +51,10 @@ body {
 
 .nav-bar-div li {
     list-style: none;
+}
+
+.nav-bar-div a:hover {
+    color: hsl(35, 77%, 62%);
 }
 
 .nav-bar-div-w {
@@ -109,8 +114,10 @@ body {
 }
 
 .text-main {
+    color: hsl(233, 8%, 79%);
     /* color: hsla(233, 8%, 79%, 0.062); */
     letter-spacing: -1px;
+    line-height: 1.2;
 }
 
 .text-btn {
@@ -121,6 +128,10 @@ body {
     letter-spacing: 1px;
     font-weight: 700;
     color: hsl(36, 100%, 99%);
+}
+
+.text-btn:hover {
+    background-color: hsl(240, 100%, 5%);
 }
 
 /* aside */
@@ -151,7 +162,15 @@ body {
     font-size: 19px;
     letter-spacing: -1px;
     margin: 10px auto 10px auto;
+    text-decoration: none;
 }
+
+.tittle a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+
+.tittle {}
 
 .text {
     color: hsl(233, 8%, 79%);
@@ -188,6 +207,10 @@ body {
     gap: 10px;
 }
 
+.figure-div-text:last-child {
+    align-self: flex-end;
+}
+
 .figure-div-01 {
     /* display: grid; */
     grid-column: 1/2
@@ -201,4 +224,35 @@ body {
 .figure-div-03 {
     /* display: grid; */
     grid-column: 3/-1
+}
+
+
+.figure-num {
+    color: hsl(233, 8%, 79%);
+}
+
+
+
+.figure-tittle a {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(240, 100%, 5%);
+    letter-spacing: -1px;
+}
+
+.figure-tittle a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.figure-text {
+    color: hsl(233, 8%, 79%);
+    line-height: -1px;
+    font-size: 15px;
+    align-items: flex-end;
+}
+
+
+.attribution {
+    margin-top: 25px;
+    text-align: center;
 }

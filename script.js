@@ -69,9 +69,9 @@ const figureRender = function (object) {
         const html = `<div class="figure-div figure-div-${a.num}">
                     <img class="figure-img${a.num}" src="${a.img}" alt="image">
                     <div class="figure-div-text">
-                    <h2 class="figure-num-${a.num}">${a.num}</h2>
-                    <h4 class="figure-tittle-${a.num}">${a.tittle}</h4>
-                    <p class="figure-text-${a.num}"> ${a.text}</p>
+                    <h2 class="figure-num figure-num-${a.num}">${a.num}</h2>
+                    <h4 class="figure-tittle figure-tittle-${a.num}"> <a href="#">${a.tittle}</a></h4>
+                    <p class=" figure-text figure-text-${a.num}"> ${a.text}</p>
                     </div>
                     </div>`
 
@@ -114,7 +114,7 @@ const asideRender = function (object) {
     asideDiv.innerHTML = "";
     for (let i = 0; i < object.length; i++) {
         const html = `<div class="aside-div aside-div-${i}">
-        <h2 class="tittle tittle-${i}"> ${object[i].tittle}</h2>
+        <h2 class="tittle tittle-${i}"> <a href="#" class="tittle"> ${object[i].tittle}</a></h2>
         <p class="text text-${i}"> ${object[i].text} </p>
         </div>`
 
